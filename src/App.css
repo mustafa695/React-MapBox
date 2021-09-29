@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+.mapboxgl-ctrl-top-left{
+  width: 450px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media screen and (min-width: 640px){
+  .mapboxgl-ctrl-geocoder {
+      width: 100% !important;
+    
+  }
+  .mapboxgl-ctrl-geocoder--input {
+    height: 40px !important;
+  }
+  .mapboxgl-ctrl-geocoder--icon {
+    top: 10.5px !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  svg.mapboxgl-ctrl-geocoder--icon.mapboxgl-ctrl-geocoder--icon-close {
+    top: 3px !important;
+    position: absolute !important;
+    right: 0 !important;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right, .mapboxgl-ctrl-top-left, .mapboxgl-ctrl-top-right{
+  margin: 40px 12px 0 !important;
 }
